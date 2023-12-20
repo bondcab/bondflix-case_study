@@ -19,7 +19,7 @@ function ObjectiveView() {
                   </p>
                 </div>
 
-                <div className="mainCodeImage"></div>
+                <img src="code.png" alt="code" className="codeImage" />
               </div>
 
               <img
