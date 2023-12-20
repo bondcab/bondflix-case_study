@@ -8,7 +8,7 @@ function PageView() {
           <div className="pageViewTitleContainer">
             <h2 className="serverSideTitle">Page Views</h2>
           </div>
-          <Container className="gridContainer" fluid>
+          <Container fluid>
             <Row>
               <Col md={8}>
                 <div className="loginView">
