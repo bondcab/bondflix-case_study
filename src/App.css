@@ -4,7 +4,7 @@
 
 html body {
   font-family: "Montserrat", sans-serif;
-  background-color: #131f44;
+  background-color: white;
 }
 
 .App-logo {
@@ -43,9 +43,9 @@ html body {
 }
 
 .titleView {
-  /* border: solid red; */
   height: 100vh;
   background-color: #131f44;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,17 +53,21 @@ html body {
 
 .titleWhiteBackground {
   background-color: white;
-  border: solid white;
-  width: 50%;
+  border: solid black 3px;
+  width: 90%;
   height: 70%;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .title {
   font-size: 65px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 40px;
 }
 
 .subTitle {
@@ -79,6 +83,7 @@ html body {
   /* border-top: solid grey; */
   /* display: flex; */
   background-color: #131f44;
+  background-color: white;
   padding-bottom: 100px;
 }
 
@@ -93,6 +98,15 @@ html body {
   background-color: white;
   width: 400px;
   border-radius: 30px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .overview {
+    font-size: 50px;
+  }
 }
 
 .overviewTitleContainer {
@@ -101,83 +115,98 @@ html body {
 }
 
 .overviewTextContainer1 {
-  height: 500px;
+  min-height: 500px;
+  max-height: 800px;
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: center;
+  align-items: start;
   padding: 2%;
   margin-bottom: 60px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 200px;
+  width: 400px;
+  max-width: 400px;
+  min-width: none;
 }
 
 .overviewTextContainer2 {
-  height: 650px;
+  min-height: 500px;
+  max-height: none;
   background-color: white;
   border-radius: 30px;
   display: flex;
   align-items: center;
   padding: 2%;
   margin-bottom: 60px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 400px;
+  max-width: 400px;
+  min-width: none;
 }
 
 .overviewImage {
-  width: 554px;
-  height: 800px;
+  max-width: 554px;
+  max-height: 800px;
+  min-width: 250px;
+  min-height: auto;
   border-radius: 18px;
   /* margin-top: 60px; */
 }
 
 .welcomeMessageContainer {
   display: flex;
-  /* border: solid orange; */
   justify-content: center;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 5%;
 }
 
 .welcomeMessage {
-  /* border: solid grey; */
-  width: 400px;
-  max-width: 400px;
-  min-width: 400px;
-  /* margin-left: 40px; */
   font-size: 24px;
-  flex-wrap: nowrap;
-  /* border-radius: 18px; */
-  /* background-color: white; */
-  /* padding: 1%; */
   text-align: start;
+}
+
+@media (max-width: 500px) {
+  .welcomeMessage {
+    font-size: 22px;
+  }
 }
 
 .overviewImage {
   position: relative;
-  /* margin-left: 6%; */
   z-index: 2;
-  /* transform: translate(400px, -600px); */
 }
 
 /* Purpose */
 .purposeView {
-  /* border: solid lightgreen; */
   background-color: #131f44;
-  /* border-top: solid grey; */
+  background-color: white;
   padding-bottom: 100px;
-  /* border-bottom: solid grey; */
 }
 
 .purposeTitleContainer {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .purposeViewTextContainer {
-  height: 400px;
+  min-height: 500px;
+  max-height: none;
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: center;
+  align-items: start;
   padding: 2%;
+  margin-bottom: 60px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 200px;
+  width: 800px;
+  max-width: none;
+  min-width: none;
 }
 
 .purpose {
@@ -189,28 +218,37 @@ html body {
   width: 400px;
   text-align: center;
   border-radius: 30px;
-  /* border: solid pink; */
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 10px;
+  max-width: 800px;
+}
+
+@media (max-width: 500px) {
+  .purpose {
+    font-size: 50px;
+  }
 }
 
 .purposeMessageContainer {
   display: flex;
-  /* border: solid orange; */
   justify-content: center;
   flex-wrap: wrap;
   gap: 5%;
 }
 
 .purposeMessage {
-  /* border: solid red; */
-  width: 800px;
-  min-width: 400px;
-  /* margin-left: 100px; */
+  min-width: none;
   font-size: 24px;
   padding-left: 20px;
   padding-right: 20px;
-  /* background-color: white; */
   text-align: start;
-  /* border-radius: 30px; */
+}
+
+@media (max-width: 500px) {
+  .purposeMessage {
+    font-size: 22px;
+  }
 }
 
 .purposeImage {
@@ -220,28 +258,24 @@ html body {
   width: 600px;
   border-radius: 30px;
   margin-bottom: 50px;
-  /* transform: translate(400px, -300px); */
+  max-height: 800px;
+  min-width: 250px;
+  min-height: auto;
 }
 
 /* Objective View */
 .objectiveView {
-  /* border: solid green; */
-  /* display: flex;
-  justify-content: center;
-  gap: 12%; */
   background-color: #131f44;
+  background-color: white;
   padding-bottom: 100px;
-  /* border-bottom: solid grey; */
 }
 
 .objectiveTitleContainer {
   display: flex;
   justify-content: center;
-  /* border: solid blue; */
 }
 
 .objectiveTitle {
-  /* display: block; */
   font-size: 65px;
   margin-top: 100px;
   margin-bottom: 60px;
@@ -249,86 +283,84 @@ html body {
   width: 400px;
   text-align: center;
   border-radius: 30px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .objectiveTitle {
+    font-size: 50px;
+  }
 }
 
 .objectiveContentContainer {
-  /* border: solid pink; */
   display: flex;
   justify-content: center;
-  /* gap: 200px; */
   flex-wrap: wrap;
   padding: 10px;
   gap: 7vw;
 }
 
-.objectiveTextContainer {
-  display: flex;
-  /* border: solid orange; */
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5%;
-}
-
 .textImageContainer {
   margin-top: 30px;
-  /* border: solid blue; */
   width: 500px;
-  min-width: 500px;
+  min-width: none;
+  max-width: 500px;
 }
 
 .objectiveContainer {
-  height: 150px;
+  max-height: none;
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: center;
-  padding: 5%;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  /* border: solid orange; */
+  align-items: start;
+  padding: 2%;
+  margin-bottom: 60px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 200px;
+  max-width: none;
+  min-width: none;
 }
+
 .objectiveText {
+  min-width: none;
   font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: start;
 }
 
-.objectiveImage {
-  /* position: absolute; */
-  z-index: 2;
-  /* transform: translate(-30px, -440px); */
-
-  max-width: 100%;
-  border: solid white 20px;
-  border-radius: 18px;
-  margin-top: 30px;
+@media (max-width: 500px) {
+  .objectiveText {
+    font-size: 22px;
+  }
 }
 
-.mainCodeImage {
-  background-color: red;
-  /* width: 100%; */
-  height: 400px;
-  background-image: url(../public/code.png);
-  background-size: 250%;
+.objectiveImage {
+  z-index: 2;
+  max-width: 100%;
   border: solid white 20px;
-  border-radius: 18px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+.codeImage {
+  width: 100%;
+  border-radius: 30px;
 }
 
 .serverSideView {
-  background-color: #131f44;
+  background-color: white;
 }
 
 .serverSideTitleContainer {
-  /* border: solid green; */
   display: flex;
   justify-content: center;
 }
 
 .serverSideTitle {
-  display: block;
   font-size: 65px;
   margin-top: 100px;
   margin-bottom: 60px;
@@ -336,133 +368,60 @@ html body {
   width: 400px;
   text-align: center;
   border-radius: 30px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .serverSideTitle {
+    font-size: 50px;
+  }
 }
 
 .restAPIContainer {
-  /* border: solid orange; */
-  /* background-color: white; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-radius: 30px; */
   padding: 1%;
-  /* height: 100%; */
 }
 
 .gridItem {
   background-color: white;
   border-radius: 30px;
-  margin-right: 15px;
-  margin-left: 15px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-content: space-between;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: none;
+  max-height: none;
+  gap: 30px;
 }
 
 .crudImage {
-  /* background-color: blue; */
-  width: 420px;
-  height: 150px;
-  background-image: url(../public/crud.jpeg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  width: 60%;
+  margin-bottom: 10px;
 }
 
-.MongoDBImage {
-  width: 420px;
-  height: 150px;
-  background-image: url(../public/mongoDB.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  /* align-self: flex-end; */
-}
-
-.mongooseImage {
-  width: 420px;
-  height: 105px;
-  background-image: url(../public/mongoose.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.authImage {
-  width: 420px;
-  height: 150px;
-  background-image: url(../public/authentication.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.securityImage {
-  width: 420px;
-  height: 230px;
-  background-image: url(../public/security.png);
-  background-size: 70%;
-  background-repeat: no-repeat;
-  transform: translate(15%);
-}
-
-.atlasImage {
-  width: 420px;
-  height: 200px;
-  background-image: url(../public/atlas.png);
-  background-size: 70%;
-  background-repeat: no-repeat;
-  transform: translate(15%);
-  align-self: center;
-  margin-top: 60px;
+@media (max-width: 600px) {
+  .crudImage {
+    width: 100%;
+  }
 }
 
 .herokuImage {
-  width: 420px;
-  height: 90px;
-  background-image: url(../public/heroku.png);
-  background-size: 70%;
-  background-repeat: no-repeat;
-  transform: translate(15%);
+  width: 60%;
+  margin-top: 10%;
 }
 
-.reactImage {
-  width: 420px;
-  height: 150px;
-  background-image: url(../public/react.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  /* transform: translate(15%); */
-}
-
-.parcelImage {
-  width: 420px;
-  height: 150px;
-  background-image: url(../public/parcel.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  transform: translate(10%);
-  margin-top: 78px;
-}
-
-.reactBootstrapImage {
-  width: 420px;
-  height: 150px;
-  background-image: url(../public/react_bootstrap.jpeg);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  transform: translate(10%);
-  margin-top: 78px;
-}
-
-.netlifyImage {
-  width: 420px;
-  height: 150px;
-  background-image: url(../public/netlify.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  transform: translate(10%);
-  margin-top: 78px;
+@media (max-width: 600px) {
+  .herokuImage {
+    width: 100%;
+    margin-top: 10%;
+  }
 }
 
 .thumbsUpImage {
@@ -471,7 +430,6 @@ html body {
   background-image: url(../public/thumbs_up.png);
   background-size: 100%;
   background-repeat: no-repeat;
-
   margin-top: 78px;
   align-self: center;
 }
@@ -482,7 +440,6 @@ html body {
   background-image: url(../public/thumbs_down.png);
   background-size: 100%;
   background-repeat: no-repeat;
-
   margin-top: 78px;
   align-self: center;
 }
@@ -493,26 +450,19 @@ html body {
   background-image: url(../public/next.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  /* transform: translate(50%); */
   margin-top: 78px;
-  /* align-self: center; */
-  /* border: solid red; */
 }
 
 .restAPIText {
-  /* border: solid red; */
-  width: 400px;
+  width: 80%;
   font-size: 24px;
   text-align: start;
-  /* padding: 3%; */
 }
 
-.restAPIImageContainer {
-  border: solid pink;
-}
-
-.serverSideContainer {
-  gap: 10px;
+@media (max-width: 500px) {
+  .restAPIText {
+    font-size: 18px;
+  }
 }
 
 .restAPI {
@@ -520,32 +470,30 @@ html body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  margin-right: 3%;
-  margin-left: 3%;
-  /* border: solid blue; */
   height: 100%;
 }
 
 /* Page Views */
 
 .pageView {
-  background-color: #131f44;
-}
-
-.mainView {
-  /* border: solid grey; */
-  border-radius: 18px;
-  margin-top: 30px;
-  /* color: #131f44; */
   background-color: white;
 }
 
+.mainView {
+  border-radius: 18px;
+  margin-top: 30px;
+  background-color: white;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
 .directorView {
-  /* border: solid grey; */
   border-radius: 18px;
   margin-top: 30px;
   color: #131f44;
   background-color: white;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .directorViewImage {
@@ -553,24 +501,25 @@ html body {
 }
 
 .mainViewImage {
-  /* border: solid red; */
   width: 95%;
 }
 
 .loginView {
-  /* border: solid grey; */
   border-radius: 18px;
   color: #131f44;
   margin-top: 30px;
   background-color: white;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .movieView {
-  /* border: solid grey; */
   border-radius: 18px;
   color: #131f44;
   margin-top: 30px;
   background-color: white;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .loginViewImage {
@@ -578,20 +527,16 @@ html body {
 }
 
 .signupView {
-  /* border: solid grey; */
   border-radius: 18px;
   margin-top: 30px;
   color: #131f44;
   background-color: white;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .signUpViewImage {
   width: 82%;
-}
-
-.gridContainer {
-  /* border: solid blue; */
-  width: 100%;
 }
 
 .movieViewImage {
@@ -599,11 +544,12 @@ html body {
 }
 
 .actorView {
-  /* border: solid grey; */
   border-radius: 18px;
   margin-top: 30px;
   color: #131f44;
   background-color: white;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .actorViewImage {
@@ -611,7 +557,6 @@ html body {
 }
 
 .pageViewTitleContainer {
-  /* border: solid green; */
   display: flex;
   justify-content: center;
 }
@@ -621,8 +566,7 @@ html body {
   justify-content: center;
 }
 
-.retrospectiveTitle {
-  display: block;
+.retroTitle {
   font-size: 65px;
   margin-top: 100px;
   margin-bottom: 60px;
@@ -630,6 +574,15 @@ html body {
   width: 500px;
   text-align: center;
   border-radius: 30px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 615px) {
+  .retroTitle {
+    font-size: 50px;
+  }
 }
 
 .retrospectiveSubTitle {
@@ -639,11 +592,11 @@ html body {
 .retrospectiveGridItem {
   background-color: white;
   border-radius: 30px;
-  margin-right: 15px;
-  margin-left: 15px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .retrospectiveItemContainer {
@@ -653,12 +606,10 @@ html body {
   margin-top: 30px;
   margin-right: 3%;
   margin-left: 3%;
-  /* border: solid blue; */
   height: 100%;
 }
 
 .retroImageTitle {
-  /* border: solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -671,16 +622,12 @@ html body {
   margin-top: 30px;
   margin-right: 3%;
   margin-left: 3%;
-  /* border: solid blue; */
   height: 100%;
 }
 
 .retroText {
-  /* border: solid red; */
-
   font-size: 24px;
   text-align: start;
-  /* padding: 3%; */
 }
 
 .pageContainer {
