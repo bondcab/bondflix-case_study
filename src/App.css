@@ -49,6 +49,7 @@ html body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: solid rgba(128, 128, 128, 0.622);
 }
 
 .titleWhiteBackground {
@@ -85,6 +86,7 @@ html body {
   background-color: #131f44;
   background-color: white;
   padding-bottom: 100px;
+  border-bottom: solid rgba(128, 128, 128, 0.622);
 }
 
 .overview {
@@ -93,7 +95,7 @@ html body {
   text-align: center;
   /* margin-left: 10%; */
   /* border: solid pink; */
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 60px;
   background-color: white;
   width: 400px;
@@ -184,6 +186,7 @@ html body {
   background-color: #131f44;
   background-color: white;
   padding-bottom: 100px;
+  border-bottom: solid rgba(128, 128, 128, 0.622);
 }
 
 .purposeTitleContainer {
@@ -212,7 +215,7 @@ html body {
 .purpose {
   display: block;
   font-size: 65px;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 60px;
   background-color: white;
   width: 400px;
@@ -267,7 +270,8 @@ html body {
 .objectiveView {
   background-color: #131f44;
   background-color: white;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
+  border-bottom: solid rgba(128, 128, 128, 0.622);
 }
 
 .objectiveTitleContainer {
@@ -277,7 +281,7 @@ html body {
 
 .objectiveTitle {
   font-size: 65px;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 60px;
   background-color: white;
   width: 400px;
@@ -322,6 +326,7 @@ html body {
   min-width: 200px;
   max-width: none;
   min-width: none;
+  flex-direction: column;
 }
 
 .objectiveText {
@@ -346,6 +351,79 @@ html body {
   border-radius: 30px;
 }
 
+.rolesImage {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 60px;
+}
+
+.durationTitle {
+  max-height: none;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: start;
+  padding: 2%;
+  margin-bottom: 60px;
+  border: solid rgba(128, 128, 128, 0.622);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: none;
+  min-width: none;
+  flex-direction: column;
+  font-size: 40px;
+}
+
+.durationImage {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.durationTitleContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.durationContainer {
+  max-height: none;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: start;
+  padding: 2%;
+  margin-bottom: 60px;
+  border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 200px;
+  max-width: none;
+  min-width: none;
+  flex-direction: column;
+  height: 90%;
+}
+
+.durationImageContainer {
+  max-height: none;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: start;
+  /* padding: 2%; */
+  margin-bottom: 60px;
+  /* border: solid black 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  min-width: 200px;
+  max-width: none;
+  min-width: none;
+  flex-direction: column;
+  height: 90%;
+}
+
+.textImageDurationContainer {
+  margin-top: 30px;
+  width: 100%;
+}
+
 .codeImage {
   width: 100%;
   border-radius: 30px;
@@ -353,6 +431,8 @@ html body {
 
 .serverSideView {
   background-color: white;
+  border-bottom: solid rgba(128, 128, 128, 0.622);
+  padding-bottom: 120px;
 }
 
 .serverSideTitleContainer {
@@ -362,7 +442,7 @@ html body {
 
 .serverSideTitle {
   font-size: 65px;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 60px;
   background-color: white;
   width: 400px;
@@ -389,7 +469,6 @@ html body {
 .gridItem {
   background-color: white;
   border-radius: 30px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -398,7 +477,12 @@ html body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   min-width: none;
   max-height: none;
-  gap: 30px;
+  height: 100%;
+  padding-bottom: 25px;
+}
+
+.gridHorizonalGap {
+  padding-bottom: 25px;
 }
 
 .crudImage {
@@ -477,6 +561,8 @@ html body {
 
 .pageView {
   background-color: white;
+  border-bottom: solid rgba(128, 128, 128, 0.622);
+  padding-bottom: 120px;
 }
 
 .mainView {
@@ -568,7 +654,7 @@ html body {
 
 .retroTitle {
   font-size: 65px;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 60px;
   background-color: white;
   width: 500px;

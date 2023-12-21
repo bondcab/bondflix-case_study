@@ -7,6 +7,7 @@ import ServerSideView from "./components/ServerSideView";
 import ClientSideView from "./components/ClientSideView";
 import PageView from "./components/PageView";
 import RetrospectiveView from "./components/RetrospectiveView";
+import DurationView from "./components/DurationView";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <OverView />
       <PurposeView />
       <ObjectiveView />
+      <DurationView />
       <ServerSideView />
       <ClientSideView />
       <PageView />

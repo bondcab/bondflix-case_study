@@ -11,7 +11,7 @@ function ClientSideView() {
             </div>
 
             <Row>
-              <Col md={6}>
+              <Col md={6} className="gridHorizonalGap">
                 <div className="gridItem">
                   <div className="restAPI">
                     <div className="restAPIContainer">
@@ -28,7 +28,7 @@ function ClientSideView() {
                   </div>
                 </div>
               </Col>
-              <Col md={6}>
+              <Col md={6} className="gridHorizonalGap">
                 <div className="gridItem">
                   <div className="restAPI">
                     <div className="restAPIContainer">
@@ -46,7 +46,7 @@ function ClientSideView() {
               </Col>
             </Row>
             <Row>
-              <Col md={6}>
+              <Col md={6} className="gridHorizonalGap">
                 <div className="gridItem">
                   <div className="restAPI">
                     <div className="restAPIContainer">
@@ -63,7 +63,7 @@ function ClientSideView() {
                   </div>
                 </div>
               </Col>
-              <Col md={6}>
+              <Col md={6} className="gridHorizonalGap">
                 <div className="gridItem">
                   <div className="restAPI">
                     <div className="restAPIContainer">
