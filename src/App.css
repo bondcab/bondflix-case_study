@@ -122,7 +122,7 @@ html body {
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding: 2%;
   margin-bottom: 60px;
   border: solid black 3px;
@@ -201,7 +201,7 @@ html body {
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding: 2%;
   margin-bottom: 60px;
   border: solid black 3px;
@@ -318,7 +318,7 @@ html body {
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding: 2%;
   margin-bottom: 60px;
   border: solid black 3px;
@@ -362,7 +362,7 @@ html body {
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding: 2%;
   margin-bottom: 60px;
   border: solid rgba(128, 128, 128, 0.622);
@@ -390,7 +390,7 @@ html body {
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding: 2%;
   margin-bottom: 60px;
   border: solid black 3px;
@@ -407,7 +407,7 @@ html body {
   background-color: white;
   border-radius: 30px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   /* padding: 2%; */
   margin-bottom: 60px;
   /* border: solid black 3px;
